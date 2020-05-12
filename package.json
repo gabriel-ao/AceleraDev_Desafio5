@@ -18,6 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "submit": "react-scripts test src/__tests__/submit.test.js --reporters=default --reporters=jest-junit"
   },
   "eslintConfig": {
@@ -36,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "dayjs": "^1.8.23"
+    "dayjs": "^1.8.23",
+    "gh-pages": "^2.2.0"
   }
 }
